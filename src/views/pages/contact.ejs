@@ -1,0 +1,17 @@
+<marquee>
+    Contact page
+</marquee>
+<h1>
+    <%= title %>
+</h1>
+<hr>
+<p>
+    <%= content %>
+</p>
+<h3 class="person">
+    <%= `${person.firstname} ${person.lastname}` %>
+</h3>
+<address>
+    <%= person.location.city + ", " + person.location.country %>
+</address>
+<hr>
