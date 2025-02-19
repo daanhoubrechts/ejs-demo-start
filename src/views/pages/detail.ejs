@@ -1,0 +1,21 @@
+<marquee>
+    <%-emojify("Dinosaur detail page")%>
+</marquee>
+<section <% if (isHerbivore==="Yes" ) { %>
+    class="green dino-container"
+    <% } else {%>
+        class="red dino-container"
+        <% } %>>
+            <h1>
+                <%=uppie(thisDino.name)%>
+            </h1>
+            <h3>
+                Is this dinosaur herbivore? <%-highlight(isHerbivore)%>
+            </h3>
+            <p>
+                <%=thisDino.description%>
+            </p>
+
+            <img src="/assets/images/<%=thisDino.image%>" alt="">
+
+</section>

@@ -1,4 +1,9 @@
-<marquee>Dinosaurs page</marquee>
+<section>
+
+</section>
+<marquee>
+    <%-emojify("Dinosaurs page")%>
+</marquee>
 <h1>
     <%= title %>
 </h1>
@@ -13,13 +18,15 @@
                 <% } %>
 
                     <h3>
-                        <%=dino.name%>
+                        <%=uppie(dino.name)%>
                     </h3>
                     <p>
                         <%=dino.description%>
                     </p>
 
-                    <img src="./public/assets/images<%= dino.image %>" alt="">
+                    <img src="/assets/images/<%=dino.image%>" alt="">
+
+                    <a href="dino/<%=dino.slug%>">Read more</a>
             </li>
             <% }) %>
 </ul>

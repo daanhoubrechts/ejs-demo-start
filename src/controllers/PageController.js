@@ -38,15 +38,7 @@ export const contact = (req, res) => {
     navItems,
   });
 };
-export const dino = (req, res) => {
-  res.render("pages/dino", {
-    title: "Dinosaurs",
-    content: "A lot of different dinosaurs...",
 
-    navItems,
-    dinosaurs,
-  });
-};
 export const privacy = (req, res) => {
   res.render("pages/default", {
     title: "Privacy Policy",
